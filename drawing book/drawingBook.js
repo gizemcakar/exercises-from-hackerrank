@@ -1,5 +1,5 @@
 
-let minimumPageNumber = function pageCount(n, p){
+function pageCount(n, p){
     let turnedPageFromBeginning = 0;
     for(let i=1; i<p; i=i+2){
         turnedPageFromBeginning++;       
@@ -22,4 +22,4 @@ let minimumPageNumber = function pageCount(n, p){
     return minimumPageTurned;
 }
 
-document.getElementById("minimumPage").innerHTML = minimumPageNumber(6,2)
+document.getElementById("minimumPage").innerHTML = pageCount(6,2)

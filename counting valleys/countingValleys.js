@@ -1,7 +1,7 @@
 let path = ["U", "D", "D", "D", "U", "D", "U", "U"];
 let steps = path.length;
 
-let countingValleys = function(steps, path){
+let countingValleys = (steps, path) =>{
     let seaLevel = 0;
     let numberOfValley = 0;
     for(let i=0; i<path.length; i++){

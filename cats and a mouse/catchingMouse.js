@@ -1,7 +1,7 @@
 let x = 2;
 let y = 5;
 let z = 4;
-let catchingMouse = function catAndMouse(x, y, z){
+function catAndMouse(x, y, z){
     let whoCatchesMouse = 0;
     let distancefromA = Math.abs(x-z);
     let distancefromB = Math.abs(y-z);
@@ -17,4 +17,4 @@ let catchingMouse = function catAndMouse(x, y, z){
     return whoCatchesMouse;   
 }
 
-document.getElementById("catchingMouse").innerHTML = catchingMouse(x, y, z);
+document.getElementById("catchingMouse").innerHTML = catAndMouse(x, y, z);

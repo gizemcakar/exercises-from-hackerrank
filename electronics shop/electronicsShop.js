@@ -2,7 +2,7 @@
 let keyboards = [3, 1];
 let drives = [5, 2, 8];
 let b = 10;
-let electronicsShop = function getMoneySpent(keyboards, drives, b){
+let getMoneySpent = (keyboards, drives, b) => {
     let total = 0;
     let array = [];
     for(let i=0; i<keyboards.length; i++){
@@ -22,7 +22,7 @@ let electronicsShop = function getMoneySpent(keyboards, drives, b){
     }
     return biggest;
 }
-document.getElementById("electronicsShop").innerHTML = electronicsShop(keyboards, drives, b);
+document.getElementById("electronicsShop").innerHTML = getMoneySpent(keyboards, drives, b);
 
 
 // diger ornek olarak; b=5, keyboard=[5], drives=[4] girince -1 donuyor.

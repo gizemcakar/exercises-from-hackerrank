@@ -2,7 +2,7 @@
 let ar = [1, 2, 1, 2, 1, 3, 2];
 let n = ar.length;
 
-let pairs = function sockMerchant(n, ar) {
+function sockMerchant(n, ar) {
     let counts = {};
     for (var i = 0; i < ar.length; i++){
         counts[ar[i]] = (counts[ar[i]] + 1) || 1;
@@ -13,4 +13,4 @@ let pairs = function sockMerchant(n, ar) {
     }
     return pair
 }
-document.getElementById("pairs").innerHTML = pairs(n, ar);
+document.getElementById("pairs").innerHTML = sockMerchant(n, ar);
